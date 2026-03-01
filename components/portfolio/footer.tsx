@@ -8,8 +8,8 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex min-h-[70px] flex-col items-center justify-center p-4 text-center">
-      <div className="mb-2 block w-full max-w-[270px] text-[color:var(--light-slate)] md:hidden">
+    <footer className="flex min-h-17.5 flex-col items-center justify-center p-4 text-center">
+      <div className="mb-2 block w-full max-w-67.5 text-(--light-slate) md:hidden">
         <ul className="m-0 flex list-none items-center justify-between p-0">
           {socialMedia.map((item) => (
             <li key={item.name}>
@@ -27,7 +27,7 @@ export const Footer = () => {
         </ul>
       </div>
 
-      <div className="font-mono text-[12px] leading-none text-[color:var(--light-slate)] space-y-1" tabIndex={-1}>
+      <div className="font-mono text-[12px] leading-none text-(--light-slate) space-y-1" tabIndex={-1}>
         <div>daffastack.dev &copy;{currentYear} | Made With <a href="https://nextjs.org" referrerPolicy="no-referrer">Next.js</a></div>
         <div>Design Inspired by <a target="_blank" href="https://v4.brittanychiang.com/" referrerPolicy="no-referrer">Brittany Chiang</a></div>
       </div>

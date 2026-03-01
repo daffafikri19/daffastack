@@ -21,7 +21,7 @@ export default function Home() {
     <PageShell isHome>
       <main
         id="content-main"
-        className="mx-auto w-full max-w-[1600px] px-6 sm:px-10 lg:px-[100px] xl:px-[150px]"
+        className="mx-auto w-full max-w-400 px-6 sm:px-10 lg:px-25 xl:px-37.5"
         style={{ counterReset: "section" }}
       >
         <Hero />

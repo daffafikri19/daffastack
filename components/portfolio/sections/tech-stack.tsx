@@ -7,8 +7,8 @@ export const TechStack = () => (
     <div className="space-y-12 px-6 md:px-4">
       <div className="grid w-full gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {techStackContent.groups.map((group) => (
-          <article key={group.title} className="group relative h-full">
-            <div className="relative z-[1] h-full overflow-hidden rounded-[var(--border-radius)] border border-[color:var(--lightest-navy)]/75 bg-[color:var(--light-navy)] p-5 shadow-[0_10px_30px_-15px_var(--navy-shadow)] transition duration-200 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:border-[color:var(--blue)]/45">
+          <article key={group.title} className="group relative isolate h-full">
+            <div className="relative z-10 h-full overflow-hidden rounded-[var(--border-radius)] border border-[color:var(--lightest-navy)]/75 bg-[color:var(--light-navy)] p-5 shadow-[0_10px_30px_-15px_var(--navy-shadow)] transition duration-200 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:border-[color:var(--blue)]/45">
               <h3 className="font-mono text-[13px] uppercase tracking-[0.08em] text-[color:var(--blue)]">
                 {group.title}
               </h3>
@@ -25,7 +25,7 @@ export const TechStack = () => (
               </ul>
             </div>
 
-            <span className="pointer-events-none absolute left-3 top-3 -z-[1] h-full w-full rounded-[var(--border-radius)] border-2 border-[color:var(--blue)]/85 transition duration-200 group-hover:translate-x-1.5 group-hover:translate-y-1.5" />
+            <span className="pointer-events-none absolute left-3 top-3 z-0 h-full w-full rounded-[var(--border-radius)] border-2 border-[color:var(--blue)]/85 transition duration-200 group-hover:translate-x-1.5 group-hover:translate-y-1.5" />
           </article>
         ))}
       </div>

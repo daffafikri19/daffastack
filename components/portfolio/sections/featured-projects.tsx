@@ -129,12 +129,12 @@ export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
                   <Image
                     src={project.cover}
                     alt={project.title}
-                    className="h-full w-full rounded-[var(--border-radius)] object-cover mix-blend-multiply grayscale brightness-[0.65] contrast-100 transition duration-300 group-hover:mix-blend-normal group-hover:grayscale-0 group-hover:brightness-100"
+                    className="h-full w-full rounded-[var(--border-radius)] object-cover transition duration-300 md:mix-blend-multiply md:grayscale md:brightness-[0.65] md:contrast-100 md:group-hover:mix-blend-normal md:group-hover:grayscale-0 md:group-hover:brightness-100"
                     width={700}
                     height={438}
                   />
                 ) : null}
-                <span className="pointer-events-none absolute inset-0 bg-[color:var(--navy)] mix-blend-screen transition duration-300 group-hover:bg-transparent" />
+                <span className="pointer-events-none absolute inset-0 hidden bg-[color:var(--navy)] mix-blend-screen transition duration-300 group-hover:bg-transparent md:block" />
               </a>
             </div>
           </li>

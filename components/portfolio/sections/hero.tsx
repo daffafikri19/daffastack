@@ -30,10 +30,10 @@ export const Hero = () => (
       {heroContent.intro}
     </Badge>
 
-    <h2 className="mb-1 text-[clamp(80px,10vw,120px)] font-semibold leading-[1.05] text-[color:var(--lightest-slate)]">
+    <h2 className="mb-1 text-[clamp(42px,11vw,96px)] font-semibold leading-[1.05] text-[color:var(--lightest-slate)]">
       {heroContent.name}
     </h2>
-    <h3 className="text-[clamp(40px,8vw,80px)] font-semibold leading-[0.95] text-[color:var(--slate)]">
+    <h3 className="text-[clamp(30px,8vw,72px)] font-semibold leading-[0.95] text-[color:var(--slate)]">
       {heroContent.subtitle}
     </h3>
 
