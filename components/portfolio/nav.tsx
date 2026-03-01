@@ -7,7 +7,7 @@ import { navLinks } from "@/lib/portfolio-config";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { IconHex, IconLogo } from "./icons";
-import { useScrollDirection } from "./hooks";
+import { useScrollDirection } from "../../lib/hooks";
 
 type NavProps = {
   isHome?: boolean;

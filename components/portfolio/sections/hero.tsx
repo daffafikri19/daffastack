@@ -5,7 +5,7 @@ import { DottedGlowBackground } from "@/components/ui/dotted-glow-background";
 
 export const Hero = () => (
   <section className="relative isolate flex min-h-screen flex-col items-start justify-center py-24 md:py-28">
-    <div className="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 overflow-hidden [mask-image:radial-gradient(ellipse_75%_60%_at_50%_50%,black,transparent_100%)]">
+    <div className="pointer-events-none absolute inset-y-0 left-1/2 -z-10 w-screen -translate-x-1/2 overflow-hidden mask-[radial-gradient(ellipse_75%_60%_at_50%_50%,black,transparent_100%)]">
       <DottedGlowBackground
         className="absolute inset-0 opacity-75"
         gap={16}
@@ -25,25 +25,25 @@ export const Hero = () => (
 
     <Badge
       variant="link"
-      className="mb-6 px-3 py-1 font-mono text-[12px] tracking-[0.08em] text-[color:var(--blue)]"
+      className="mb-6 px-3 py-1 font-mono text-[12px] tracking-[0.08em] text-(--blue)"
     >
       {heroContent.intro}
     </Badge>
 
-    <h2 className="mb-1 text-[clamp(42px,11vw,96px)] font-semibold leading-[1.05] text-[color:var(--lightest-slate)]">
+    <h2 className="mb-1 text-[clamp(42px,11vw,96px)] font-semibold leading-[1.05] text-(--lightest-slate)">
       {heroContent.name}
     </h2>
-    <h3 className="text-[clamp(30px,8vw,72px)] font-semibold leading-[0.95] text-[color:var(--slate)]">
+    <h3 className="text-[clamp(30px,8vw,72px)] font-semibold leading-[0.95] text-(--slate)">
       {heroContent.subtitle}
     </h3>
 
-    <p className="mt-6 max-w-xl text-[color:var(--light-slate)]">{heroContent.description}</p>
+    <p className="mt-6 max-w-xl text-(--light-slate)">{heroContent.description}</p>
 
     <Button
       asChild
       variant="outline"
       size="lg"
-      className="mt-10 border-[color:var(--blue)] bg-transparent font-mono text-[color:var(--blue)] shadow-none transition duration-200 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:bg-[color:var(--blue)]/10 hover:text-[color:var(--blue)] hover:shadow-[4px_4px_0_0_var(--blue)]"
+      className="mt-10 border-(--blue) bg-transparent font-mono text-(--blue) shadow-none transition duration-200 hover:-translate-x-1.5 hover:-translate-y-1.5 hover:bg-(--blue)/10 hover:text-(--blue) hover:shadow-[4px_4px_0_0_var(--blue)]"
     >
       <a href={heroContent.ctaHref}>{heroContent.ctaLabel}</a>
     </Button>

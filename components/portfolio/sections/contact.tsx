@@ -33,20 +33,20 @@ const EmailIcon = ({ className }: { className?: string }) => (
 );
 
 export const Contact = () => (
-  <section id="contact" className="mx-auto max-w-[900px] py-16 md:py-20 lg:py-24">
+  <section id="contact" className="mx-auto max-w-225 py-16 md:py-20 lg:py-24">
     <h2 className="numbered-heading">{contactContent.heading}</h2>
 
-    <div className="mx-auto mb-14 max-w-[600px] text-center md:mb-24">
-      <h3 className="text-[clamp(40px,5vw,60px)] font-semibold leading-none text-[color:var(--lightest-slate)]">
+    <div className="mx-auto mb-14 max-w-150 text-center md:mb-24">
+      <h3 className="text-[clamp(40px,5vw,60px)] font-semibold leading-none text-(--lightest-slate)">
         {contactContent.title}
       </h3>
-      <p className="mx-auto mt-5 max-w-xl text-[color:var(--light-slate)]">{contactContent.description}</p>
+      <p className="mx-auto mt-5 max-w-xl text-(--light-slate)">{contactContent.description}</p>
       <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
         <Button
           asChild
           variant="outline"
           size="lg"
-          className="border-[color:var(--blue)] bg-transparent font-mono text-[color:var(--blue)] hover:-translate-x-1.5 hover:-translate-y-1.5 hover:bg-[color:var(--blue)]/10 hover:text-[color:var(--blue)] hover:shadow-[4px_4px_0_0_var(--blue)]"
+          className="border-(--blue) bg-transparent font-mono text-(--blue) hover:-translate-x-1.5 hover:-translate-y-1.5 hover:bg-(--blue)/10 hover:text-(--blue) hover:shadow-[4px_4px_0_0_var(--blue)]"
         >
           <a href={contactContent.whatsappUrl} target="_blank" rel="noreferrer">
             <WhatsAppIcon className="size-4" />
@@ -58,7 +58,7 @@ export const Contact = () => (
           asChild
           variant="outline"
           size="lg"
-          className="border-[color:var(--blue)] bg-transparent font-mono text-[color:var(--blue)] hover:-translate-x-1.5 hover:-translate-y-1.5 hover:bg-[color:var(--blue)]/10 hover:text-[color:var(--blue)] hover:shadow-[4px_4px_0_0_var(--blue)]"
+          className="border-(--blue) bg-transparent font-mono text-(--blue) hover:-translate-x-1.5 hover:-translate-y-1.5 hover:bg-(--blue)/10 hover:text-(--blue) hover:shadow-[4px_4px_0_0_var(--blue)]"
         >
           <a href={`mailto:${email}`}>
             <EmailIcon className="size-4" />

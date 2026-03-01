@@ -27,9 +27,9 @@ export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
           >
             <div
               className={cn(
-                "relative z-[5] md:row-[1/-1]",
-                "rounded-[var(--border-radius)] p-6 md:rounded-none md:p-0",
-                "bg-[color:var(--light-navy)]/85 backdrop-blur-[1px] md:bg-transparent",
+                "relative z-5 md:row-span-full",
+                "rounded-(--border-radius) p-6 md:rounded-none md:p-0",
+                "bg-(--light-navy)/85 backdrop-blur-[1px] md:bg-transparent",
                 "md:col-span-7",
                 isOdd ? "md:col-start-7 md:text-right" : "md:col-start-1 md:text-left",
               )}
@@ -37,21 +37,21 @@ export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
               <Badge
                 variant="outline"
                 className={cn(
-                  "mb-3 border-[color:var(--blue)]/40 bg-[color:var(--blue)]/10 font-mono text-[11px] text-[color:var(--blue)]",
+                  "mb-3 border-(--blue)/40 bg-(--blue)/10 font-mono text-[11px] text-(--blue)",
                   isOdd && "md:ml-auto",
                 )}
               >
                 Featured Project
               </Badge>
 
-              <h3 className="text-[clamp(24px,5vw,28px)] font-semibold text-[color:var(--lightest-slate)]">
+              <h3 className="text-[clamp(24px,5vw,28px)] font-semibold text-(--lightest-slate)">
                 <a href={project.external ?? project.github ?? "#"} target="_blank" rel="noreferrer">
                   {project.title}
                 </a>
               </h3>
 
               <div
-                className="mt-4 rounded-[var(--border-radius)] bg-[color:var(--light-navy)] p-5 text-[18px] text-[color:var(--light-slate)] shadow-[0_10px_30px_-15px_var(--navy-shadow)] md:p-6 [&_a]:inline-link"
+                className="mt-4 rounded-(--border-radius) bg-(--light-navy) p-5 text-[18px] text-(--light-slate) shadow-[0_10px_30px_-15px_var(--navy-shadow)] md:p-6 [&_a]:inline-link"
                 dangerouslySetInnerHTML={{ __html: project.html }}
               />
 
@@ -66,7 +66,7 @@ export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
                     <li key={`${project.title}-${item}`}>
                       <Badge
                         variant="secondary"
-                        className="border-transparent bg-[color:var(--lightest-navy)] px-2 py-1 font-mono text-[10px] text-[color:var(--lightest-slate)]"
+                        className="border-transparent bg-(--lightest-navy) px-2 py-1 font-mono text-[10px] text-(--lightest-slate)"
                       >
                         {item}
                       </Badge>
@@ -77,7 +77,7 @@ export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
 
               <div
                 className={cn(
-                  "mt-4 flex items-center gap-1 text-[color:var(--lightest-slate)]",
+                  "mt-4 flex items-center gap-1 text-(--lightest-slate)",
                   isOdd ? "md:justify-end" : "md:justify-start",
                 )}
               >
@@ -86,7 +86,7 @@ export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
                     asChild
                     variant="outline"
                     size="sm"
-                    className="border-[color:var(--blue)] bg-transparent font-mono text-[color:var(--blue)] hover:-translate-x-1 hover:-translate-y-1 hover:bg-[color:var(--blue)]/10 hover:text-[color:var(--blue)] hover:shadow-[3px_3px_0_0_var(--blue)]"
+                    className="border-(--blue) bg-transparent font-mono text-(--blue) hover:-translate-x-1 hover:-translate-y-1 hover:bg-(--blue)/10 hover:text-(--blue) hover:shadow-[3px_3px_0_0_var(--blue)]"
                   >
                     <a href={project.cta} aria-label="Course Link" target="_blank" rel="noreferrer">
                       Learn More
@@ -106,7 +106,7 @@ export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
                     rel="noreferrer"
                     className="p-2.5"
                   >
-                    <Icon name="External" className="size-[22px]" />
+                    <Icon name="External" className="size-5.5" />
                   </a>
                 ) : null}
               </div>
@@ -114,7 +114,7 @@ export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
 
             <div
               className={cn(
-                "relative rounded-[var(--border-radius)] shadow-[0_10px_30px_-15px_var(--navy-shadow)] md:row-[1/-1]",
+                "relative rounded-(--border-radius) shadow-[0_10px_30px_-15px_var(--navy-shadow)] md:row-span-full",
                 "md:col-span-7",
                 isOdd ? "md:col-start-1" : "md:col-start-6",
               )}
@@ -123,18 +123,18 @@ export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
                 href={project.external ?? project.github ?? "#"}
                 target="_blank"
                 rel="noreferrer"
-                className="group relative block h-full w-full overflow-hidden rounded-[var(--border-radius)] bg-[color:var(--blue)]"
+                className="group relative block h-full w-full overflow-hidden rounded-(--border-radius) bg-(--blue)"
               >
                 {project.cover ? (
                   <Image
                     src={project.cover}
                     alt={project.title}
-                    className="h-full w-full rounded-[var(--border-radius)] object-cover transition duration-300 md:mix-blend-multiply md:grayscale md:brightness-[0.65] md:contrast-100 md:group-hover:mix-blend-normal md:group-hover:grayscale-0 md:group-hover:brightness-100"
+                    className="h-full w-full rounded-(--border-radius) object-cover transition duration-300 md:mix-blend-multiply md:grayscale md:brightness-[0.65] md:contrast-100 md:group-hover:mix-blend-normal md:group-hover:grayscale-0 md:group-hover:brightness-100"
                     width={700}
                     height={438}
                   />
                 ) : null}
-                <span className="pointer-events-none absolute inset-0 hidden bg-[color:var(--navy)] mix-blend-screen transition duration-300 group-hover:bg-transparent md:block" />
+                <span className="pointer-events-none absolute inset-0 hidden bg-(--navy) mix-blend-screen transition duration-300 group-hover:bg-transparent md:block" />
               </a>
             </div>
           </li>
