@@ -23,6 +23,7 @@ export default function Home() {
         id="content-main"
         className="mx-auto w-full max-w-400 px-6 sm:px-10 lg:px-25 xl:px-37.5"
         style={{ counterReset: "section" }}
+        data-scroll-behavior="smooth"
       >
         <Hero />
         <About />
