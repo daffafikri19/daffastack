@@ -11,7 +11,7 @@ type FeaturedProjectsProps = {
 
 export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
   <section id="projects" className="py-16 md:py-20 lg:py-24">
-    <h2 className="numbered-heading">My Featured Projects</h2>
+    <h2 className="numbered-heading">My Favorite Projects</h2>
 
     <ul className="m-0 list-none p-0">
       {projects.map((project, index) => {
@@ -123,16 +123,18 @@ export const FeaturedProjects = ({ projects }: FeaturedProjectsProps) => (
                 href={project.external ?? project.github ?? "#"}
                 target="_blank"
                 rel="noreferrer"
-                className="group relative block h-full w-full overflow-hidden rounded-(--border-radius) bg-(--blue)"
+                className="group relative block w-full overflow-hidden rounded-(--border-radius) bg-(--blue)"
               >
                 {project.cover ? (
-                  <Image
-                    src={project.cover}
-                    alt={project.title}
-                    className="h-full w-full rounded-(--border-radius) object-cover transition duration-300 md:mix-blend-multiply md:grayscale md:brightness-[0.65] md:contrast-100 md:group-hover:mix-blend-normal md:group-hover:grayscale-0 md:group-hover:brightness-100"
-                    width={700}
-                    height={438}
-                  />
+                  <div className="relative aspect-16/10 w-full md:aspect-video">
+                    <Image
+                      src={project.cover}
+                      alt={project.title}
+                      fill
+                      sizes="(min-width: 1024px) 42vw, (min-width: 768px) 50vw, 100vw"
+                      className="rounded-(--border-radius) object-cover transition duration-300 md:mix-blend-multiply md:grayscale md:brightness-[0.65] md:contrast-100 md:group-hover:mix-blend-normal md:group-hover:grayscale-0 md:group-hover:brightness-100"
+                    />
+                  </div>
                 ) : null}
                 <span className="pointer-events-none absolute inset-0 hidden bg-(--navy) mix-blend-screen transition duration-300 group-hover:bg-transparent md:block" />
               </a>

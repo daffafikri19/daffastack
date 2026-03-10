@@ -5,7 +5,6 @@ cover: './phln.png'
 github: ''
 external: ''
 tech:
-  - VS Code
   - Python
   - Django
   - Oracle

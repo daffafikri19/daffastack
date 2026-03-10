@@ -5,7 +5,6 @@ cover: './telak.png'
 github: ''
 external: ''
 tech:
-  - VS Code
   - Python
   - Django
   - Oracle

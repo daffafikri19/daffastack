@@ -1,5 +1,5 @@
 ---
-date: '2026-01-02'
+date: '1'
 title: 'Block Blaster'
 github: 'https://github.com/daffafikri19/block_blaster'
 external: ''

@@ -5,7 +5,6 @@ cover: './bale-community.png'
 github: ''
 external: 'https://balecommunity.btn.co.id/'
 tech:
-  - VS Code
   - JavaScript
   - Node.js
   - Redis

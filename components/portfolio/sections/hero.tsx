@@ -33,7 +33,7 @@ export const Hero = () => (
     <h2 className="mb-1 text-[clamp(42px,11vw,96px)] font-semibold leading-[1.05] text-(--lightest-slate)">
       {heroContent.name}
     </h2>
-    <h3 className="text-[clamp(30px,8vw,72px)] font-semibold leading-[0.95] text-(--slate)">
+    <h3 className="text-[clamp(15px,8vw,55px)] font-semibold leading-[0.95] text-(--slate)">
       {heroContent.subtitle}
     </h3>
 

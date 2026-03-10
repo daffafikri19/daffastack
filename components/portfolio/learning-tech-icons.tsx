@@ -19,13 +19,6 @@ const IconBase = ({ children, ...props }: IconProps) => (
   </svg>
 );
 
-const IconNestJs = () => (
-  <IconBase>
-    <path d="M12 3 4 8v8l8 5 8-5V8z" />
-    <path d="M8 16V8l8 8V8" />
-  </IconBase>
-);
-
 const IconSpringBoot = () => (
   <IconBase>
     <path d="M4 14c0-5 4-9 9-9 2.8 0 5.2 1 7 2.8-1.2 5.2-4.7 10.2-10.5 10.2A7.5 7.5 0 0 1 4 14z" />
@@ -66,8 +59,6 @@ const IconJava = () => (
 export const LearningTechIcon = ({ name, className }: { name: string; className?: string }) => {
   const icon = (() => {
     switch (name.toLowerCase()) {
-      case "nestjs":
-        return <IconNestJs />;
       case "springboot":
       case "spring-boot":
         return <IconSpringBoot />;
@@ -79,7 +70,7 @@ export const LearningTechIcon = ({ name, className }: { name: string; className?
       case "java":
         return <IconJava />;
       default:
-        return <IconNestJs />;
+        return null;
     }
   })();
 

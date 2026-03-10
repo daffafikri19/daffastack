@@ -9,9 +9,6 @@ Special thanks to **Brittany Chiang** for the portfolio design inspiration and v
 Original portfolio reference is **Gatsby-based** implementation by Brittany Chiang
 While This project independently reimplemented and customized using **Next.js** with different architecture, components, and content
 
-Reference repository:
-- https://github.com/bchiang7/v4
-
 ## Tech Stack
 
 - Next.js 16 (App Router)
@@ -58,3 +55,19 @@ npm run start
 - Site and section config: `lib/portfolio-config.ts`
 - Jobs content: `content/jobs/*/index.md`
 - Featured and other projects: `content/featured/*/index.md` and `content/projects/*/index.md`
+
+### Project Frontmatter Example
+
+```md
+---
+date: "2026-01-02"
+title: "My Project"
+github: "https://github.com/username/repo"
+external: "https://example.com"
+thumbnail: "/images/projects/my-project.png"
+tech:
+  - Next.js
+  - TypeScript
+showInProjects: true
+---
+```

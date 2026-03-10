@@ -1,8 +1,9 @@
 ---
-date: '2024-07-09'
+date: '2'
 title: 'Banana Maturity Detection'
 github: 'https://github.com/daffafikri19/banana-maturity-detection'
 external: ''
+thumbnail: '/images/projects/banana-maturity-detection.png'
 tech:
   - Python
   - YOLO V5

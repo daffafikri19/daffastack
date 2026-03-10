@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Portfolio - Daffa Stack",
   description:
     "Personal portfolio DaffaStack made with Nextjs 16, Tailwindcss, Shadcn UI, Aceternity UI",
-  image: "/og.png", // TODO: change image source
+  image: "/og.jpg",
   twitterUsername: "@daffastack",
 };
 
@@ -62,7 +62,7 @@ export const navLinks = [
 export const heroContent = {
   intro: "Hi, i'm",
   name: "daffastack.dev",
-  subtitle: "Software Engineer",
+  subtitle: "Fullstack Developer",
   description:
     "I design and build scalable Apps, optimize performance, and refactor legacy architectures into maintainable solutions. Passionate about clean code, distributed systems, and continuous learning.",
   ctaLabel: "Check Me Out",
@@ -72,7 +72,7 @@ export const heroContent = {
 export const aboutContent = {
   heading: "About Me",
   paragraphs: [
-    "Hello! My name is Daffa and I am detail-oriented Software Engineer with several year of experience in developing, and deploying scalable web applications. Proficient in full-stack development using JavaScript, TypeScript, Python with a strong focus on delivering user-friendly, high-quality solutions.",
+    "Hello! My name is Daffa and I am detail-oriented Fullstack Developer with several year of experience in developing, and deploying scalable web applications. Proficient in full-stack development using JavaScript, TypeScript, Python with a strong focus on delivering user-friendly, high-quality solutions.",
     "I always optimizing performance, and implementing API services to support business objectives. Passionate about leveraging problemsolving skills and clean code practices to build innovative, secure systems.",
     "I am also a continuous learner who actively explores various aspects of software engineering every day, including backend architecture, system design, microservices, Domain-Driven Design (DDD), performance optimization, and emerging technologies. I believe continuous learning is essential to staying adaptable and delivering long-term technical value.",
   ],
@@ -81,15 +81,15 @@ export const aboutContent = {
 };
 
 export const techStackContent = {
-  heading: "Tech I've Used to",
+  heading: "Tech I've Used",
   groups: [
     {
       title: "Language",
-      items: ["JavaScript (ES6+)", "TypeScript", "Python", "Dart", "MySQL", "PostgreSQL", "Oracle"],
+      items: ["JavaScript (ES6+)", "TypeScript", "Python", "Dart"],
     },
     {
       title: "Framework - Library",
-      items: ["Vite.js", "Next.js", "Node.js - Express", "Django", "Flutter", "Electron.js"],
+      items: ["Vite.js", "Next.js", "Node.js - Express", "Nestjs", "Django", "Flutter", "Electron.js"],
     },
     {
       title: "Tools",
@@ -104,11 +104,6 @@ export const techStackContent = {
       {
         title: "Framework",
         items: [
-          {
-            name: "NestJS",
-            icon: "nestjs",
-            url: "https://nestjs.com/"
-          },
           {
             name: "Go Fiber",
             icon: "go-fiber",

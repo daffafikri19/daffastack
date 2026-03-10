@@ -87,7 +87,9 @@ export const JobsTabs = ({ jobs }: JobsTabsProps) => {
                     </a>
                   </span>
                 ) : (
-                  <span className="text-(--blue)"> @ {job.company}</span>
+                  !job.company?.includes("Self-Employee") && (
+                    <span className="text-(--blue)"> @ {job.company}</span>
+                  )
                 )}
               </h3>
 

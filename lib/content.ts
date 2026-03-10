@@ -31,6 +31,7 @@ export type Project = {
   tech: string[];
   github?: string;
   external?: string;
+  thumbnail?: string;
   ios?: string;
   android?: string;
   company?: string;
@@ -155,6 +156,7 @@ export const getProjects = (): Project[] => {
         tech: Array.isArray(parsed.data.tech) ? parsed.data.tech.map(String) : [],
         github: parsed.data.github ? String(parsed.data.github) : undefined,
         external: parsed.data.external ? String(parsed.data.external) : undefined,
+        thumbnail: parsed.data.thumbnail ? String(parsed.data.thumbnail) : undefined,
         ios: parsed.data.ios ? String(parsed.data.ios) : undefined,
         android: parsed.data.android ? String(parsed.data.android) : undefined,
         company: parsed.data.company ? String(parsed.data.company) : undefined,
