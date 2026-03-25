@@ -56,19 +56,25 @@ const IconJava = () => (
   </IconBase>
 );
 
+const IconNestJS = () => (
+  <IconBase>
+    <path d="M8 18V6l8 12V6" />
+  </IconBase>
+);
+
 export const LearningTechIcon = ({ name, className }: { name: string; className?: string }) => {
   const icon = (() => {
     switch (name.toLowerCase()) {
       case "springboot":
-      case "spring-boot":
         return <IconSpringBoot />;
       case "gofiber":
-      case "go-fiber":
         return <IconGoFiber />;
       case "golang":
         return <IconGolang />;
       case "java":
         return <IconJava />;
+      case "nestjs":
+        return <IconNestJS />;
       default:
         return null;
     }

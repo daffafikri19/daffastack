@@ -1,10 +1,10 @@
 export const siteConfig = {
   siteUrl: "https://daffastack.dev",
-  title: "Portfolio - Daffa Stack",
+  title: "daffastack.dev — Fullstack Developer | TypeScript, React, Node.js, Python",
   description:
-    "Personal portfolio DaffaStack made with Nextjs 16, Tailwindcss, Shadcn UI, Aceternity UI",
-  image: "/og.jpg",
-  twitterUsername: "@daffastack",
+    "Fullstack Developer specializing in scalable web applications. Experienced in building enterprise systems, RESTful APIs, and high-performance dashboards.",
+  image: "/images/daffastack_portfolio_website.png",
+  twitterUsername: "@daffastack19",
 };
 
 export const email = "daffastack@gmail.com";
@@ -76,63 +76,77 @@ export const aboutContent = {
     "I always optimizing performance, and implementing API services to support business objectives. Passionate about leveraging problemsolving skills and clean code practices to build innovative, secure systems.",
     "I am also a continuous learner who actively explores various aspects of software engineering every day, including backend architecture, system design, microservices, Domain-Driven Design (DDD), performance optimization, and emerging technologies. I believe continuous learning is essential to staying adaptable and delivering long-term technical value.",
   ],
-  photo: "/images/daffastack.png",
+  photo: "/images/daffastack.jpeg",
   photoAlt: "DaffaStack",
 };
 
 export const techStackContent = {
   heading: "Tech I've Used",
+  description:
+    "A curated stack I rely on across product interfaces, backend services, data work, and everyday delivery workflows. Hover each icon to inspect the tools behind the build.",
   groups: [
     {
-      title: "Language",
-      items: ["JavaScript (ES6+)", "TypeScript", "Python", "Dart"],
+      title: "Languages and Tools",
+      description:
+        "Core languages and day-to-day building blocks I use to shape interfaces, scripts, and delivery work.",
+      items: [
+        { name: "HTML", icon: "html" },
+        { name: "CSS", icon: "css" },
+        { name: "JavaScript", icon: "javascript" },
+        { name: "PHP", icon: "php" },
+        { name: "Python", icon: "python" },
+        { name: "Dart", icon: "dart", note: "Vibe Coding" },
+      ],
     },
     {
-      title: "Framework - Library",
-      items: ["Vite.js", "Next.js", "Node.js - Express", "Nestjs", "Django", "Flutter", "Electron.js"],
+      title: "Libraries and Frameworks",
+      description:
+        "Frontend, backend, and UI systems I use to ship web products with stronger structure and faster iteration.",
+      items: [
+        { name: "React.js", icon: "react" },
+        { name: "Next.js", icon: "nextjs" },
+        { name: "Node.js", icon: "nodejs" },
+        { name: "Django", icon: "django" },
+        { name: "Nest.js", icon: "nestjs" },
+        { name: "WordPress", icon: "wordpress" },
+        { name: "WooCommerce", icon: "woocommerce" },
+        { name: "Flutter", icon: "flutter", note: "Vibe Coding" },
+        { name: "Tailwind CSS", icon: "tailwindcss" },
+        { name: "Bootstrap 5", icon: "bootstrap5" },
+        { name: "Ant Design", icon: "antdesign" },
+        { name: "Shadcn UI", icon: "shadcnui" },
+      ],
     },
     {
-      title: "Tools",
-      items: ["Docker", "DBeaver", "k6", "Firebase", "Minio", "AWS S3", "GitHub", "GitLab", "Bitbucket"],
+      title: "Databases",
+      description:
+        "Relational and document databases I have worked with for transactional systems, reporting, and operational data.",
+      items: [
+        { name: "MySQL", icon: "mysql" },
+        { name: "PostgreSQL", icon: "postgresql" },
+        { name: "MongoDB", icon: "mongodb" },
+        { name: "Oracle", icon: "oracle" },
+      ],
+    },
+    {
+      title: "Development Tools",
+      description:
+        "The supporting toolchain I use for coding, API testing, design handoff, database inspection, and AI-assisted delivery.",
+      items: [
+        { name: "VS Code", icon: "vscode" },
+        { name: "Postman", icon: "postman" },
+        { name: "Docker", icon: "docker" },
+        { name: "DBeaver", icon: "dbeaver" },
+        { name: "Git", icon: "git" },
+        { name: "Figma", icon: "figma" },
+        { name: "MongoDB Compass", icon: "mongodb-compass" },
+        { name: "GPT Codex", icon: "gpt-codex" },
+        { name: "Claude Code", icon: "claude-code" },
+        { name: "Grafana k6", icon: "grafana-k6" },
+        { name: "MobaXTerm", icon: "mobaxterm" },
+      ],
     },
   ],
-  learningPhase: {
-    heading: "My Learning Phase",
-    description:
-      "Technologies I am actively studying and deepening to strengthen my software engineering capabilities and architectural understanding.",
-    groups: [
-      {
-        title: "Framework",
-        items: [
-          {
-            name: "Go Fiber",
-            icon: "go-fiber",
-            url: "https://go.dev/"
-          },
-          {
-            name: "Spring Boot",
-            icon: "spring-boot",
-            url: "https://spring.io/projects/spring-boot"
-          },
-        ],
-      },
-      {
-        title: "Language",
-        items: [
-          {
-            name: "Golang",
-            icon: "golang",
-            url: "https://go.dev/"
-          },
-          {
-            name: "Java",
-            icon: "java",
-            url: "https://www.java.com/en/"
-          },
-        ],
-      }
-    ],
-  },
 };
 
 export const contactContent = {

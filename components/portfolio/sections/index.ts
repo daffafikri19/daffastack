@@ -5,4 +5,3 @@ export { Hero } from "./hero";
 export { JobsTabs } from "./jobs-tabs";
 export { ProjectsGrid } from "./projects-grid";
 export { TechStack } from "./tech-stack";
-export { Learning } from "./learning";

@@ -5,7 +5,6 @@ import {
   FeaturedProjects,
   Hero,
   JobsTabs,
-  Learning,
   ProjectsGrid,
   TechStack,
 } from "@/components/portfolio/sections";
@@ -31,7 +30,6 @@ export default function Home() {
         <JobsTabs jobs={jobs} />
         <FeaturedProjects projects={featuredProjects} />
         <ProjectsGrid projects={otherProjects} />
-        <Learning />
         <Contact />
       </main>
     </PageShell>

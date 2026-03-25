@@ -29,7 +29,6 @@ export const Footer = () => {
 
       <div className="font-mono text-[12px] leading-none text-(--light-slate) space-y-1" tabIndex={-1}>
         <div>daffastack.dev &copy;{currentYear} | Made With <a href="https://nextjs.org" referrerPolicy="no-referrer">Next.js</a></div>
-        <div>Design Inspired by <a target="_blank" href="https://v4.brittanychiang.com/" referrerPolicy="no-referrer">Brittany Chiang</a></div>
       </div>
     </footer>
   );

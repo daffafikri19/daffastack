@@ -6,7 +6,7 @@ Personal portfolio website built with Next.js App Router, Tailwind CSS, shadcn/u
 
 Special thanks to **Brittany Chiang** for the portfolio design inspiration and visual reference.
 
-Original portfolio reference is **Gatsby-based** implementation by Brittany Chiang
+Original portfolio reference is **Gatsby** implementation by Brittany Chiang
 While This project independently reimplemented and customized using **Next.js** with different architecture, components, and content
 
 ## Tech Stack
@@ -23,51 +23,3 @@ While This project independently reimplemented and customized using **Next.js** 
 - Featured projects and projects grid from markdown content
 - Tech stack and learning phase sections
 - Custom responsive mobile navigation
-
-## Project Structure
-
-- `app/`: routes, layout, global styles
-- `components/portfolio/`: portfolio UI components
-- `components/ui/`: reusable UI primitives
-- `content/`: jobs and project markdown content
-- `lib/`: config and content parser utilities
-- `public/`: static assets (images, favicon, resume)
-
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
-Open `http://localhost:3000`.
-
-## Build
-
-```bash
-npm run lint
-npm run build
-npm run start
-```
-
-## Content Setup
-
-- Site and section config: `lib/portfolio-config.ts`
-- Jobs content: `content/jobs/*/index.md`
-- Featured and other projects: `content/featured/*/index.md` and `content/projects/*/index.md`
-
-### Project Frontmatter Example
-
-```md
----
-date: "2026-01-02"
-title: "My Project"
-github: "https://github.com/username/repo"
-external: "https://example.com"
-thumbnail: "/images/projects/my-project.png"
-tech:
-  - Next.js
-  - TypeScript
-showInProjects: true
----
-```

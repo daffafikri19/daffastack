@@ -128,7 +128,7 @@ export const Nav = ({ isHome = false }: NavProps) => {
               size="sm"
               className="ml-4 border-(--blue) bg-transparent font-mono text-(--blue) transition duration-200 hover:-translate-x-1 hover:-translate-y-1 hover:bg-(--blue)/10 hover:text-(--blue) hover:shadow-[3px_3px_0_0_var(--blue)]"
             >
-              <a href="/resume.pdf" target="_blank" rel="noreferrer">
+              <a href="/resume_daffastack.pdf" target="_blank" rel="noreferrer">
                 Resume
               </a>
             </Button>
@@ -227,7 +227,7 @@ export const Nav = ({ isHome = false }: NavProps) => {
                 className="mt-8 w-full border-(--blue) bg-transparent py-6 font-mono text-[17px] text-(--blue) transition duration-200 hover:bg-(--blue)/10 hover:text-(--blue)"
               >
                 <a
-                  href="/resume.pdf"
+                  href="/resume_daffastack.pdf"
                   target="_blank"
                   rel="noreferrer"
                   onClick={() => setMenuOpen(false)}
