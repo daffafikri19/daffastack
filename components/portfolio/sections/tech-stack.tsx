@@ -5,7 +5,7 @@ import { techStackContent } from "@/lib/portfolio-config";
 import { cn } from "@/lib/utils";
 
 type TechGroup = (typeof techStackContent.groups)[number];
-type TechItem = TechGroup["items"][number];
+type TechItem = TechGroup["items"][number] & { note?: string };
 
 const TechStackIconItem = ({ item }: { item: TechItem }) => (
   <Tooltip>

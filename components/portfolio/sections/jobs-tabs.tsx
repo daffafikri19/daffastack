@@ -93,7 +93,11 @@ export const JobsTabs = ({ jobs }: JobsTabsProps) => {
                 )}
               </h3>
 
-              <p className="mb-6 font-mono text-[13px] text-(--light-slate)">{job.range}</p>
+              <p className="mb-6 font-mono text-[13px] text-(--light-slate)">
+                {job.range}
+                {job.employment ? ` · ${job.employment}` : ""}
+                {job.location ? ` · ${job.location}` : ""}
+              </p>
               <p className="pt-1 text-[18px] font-medium leading-[1.3] text-(--lightest-slate)">Key of Contributions:</p>
               <div
                 className="text-[18px] [&_ul]:m-0 [&_ul]:list-none [&_ul]:p-0 [&_ul_li]:relative [&_ul_li]:mb-2.5 [&_ul_li]:pl-7 [&_ul_li]:before:absolute [&_ul_li]:before:left-0 [&_ul_li]:before:top-[0.5em] [&_ul_li]:before:h-0 [&_ul_li]:before:w-0 [&_ul_li]:before:-translate-y-1/2 [&_ul_li]:before:border-y-4 [&_ul_li]:before:border-y-transparent [&_ul_li]:before:border-l-[6px] [&_ul_li]:before:border-l-(--blue)"

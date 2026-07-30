@@ -8,6 +8,7 @@ type Frontmatter = Record<string, unknown>;
 export type Job = {
   title: string;
   company: string;
+  employment?: string;
   location?: string;
   range: string;
   url?: string;
@@ -110,6 +111,7 @@ export const getJobs = (): Job[] => {
       return {
         title: String(parsed.data.title ?? ""),
         company: String(parsed.data.company ?? ""),
+        employment: parsed.data.employment ? String(parsed.data.employment) : undefined,
         location: parsed.data.location ? String(parsed.data.location) : undefined,
         range: String(parsed.data.range ?? ""),
         url: parsed.data.url ? String(parsed.data.url) : undefined,
@@ -143,7 +145,7 @@ export const getFeaturedProjects = (): FeaturedProject[] => {
     })
     .filter((project) => Boolean(project.title));
 
-  return featured.sort((a, b) => dateWeight(a.date) - dateWeight(b.date));
+  return featured.sort((a, b) => dateWeight(b.date) - dateWeight(a.date));
 };
 
 export const getProjects = (): Project[] => {
